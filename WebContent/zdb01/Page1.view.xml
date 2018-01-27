@@ -1,0 +1,32 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		xmlns:f="sap.ui.layout.form"
+		controllerName="zdb01.Page1" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<content>
+	       <f:SimpleForm title="Company Info" binding="{/companyInfo}">
+	          <Label text="Company Name"/>
+	          <Text  text="{name}"/>
+	          <Label text="Address"/>
+	          <Text text="{address/flatno}"/>
+	          <Text text="{address/street}"/>
+	          <Text  text="{address/city}"/>
+	       </f:SimpleForm>
+	       
+	       <ComboBox selectionChange="onSelectionChange">
+	          <items>
+	            <core:Item text="{/companyInfo/empInfo/0/name}"/>
+	            <core:Item text="{/companyInfo/empInfo/1/name}"/>
+	          </items>
+	       </ComboBox>
+	       
+	         <f:SimpleForm title="Employee Data" id="idSimpleForm">
+	          <Label text="Name"/>
+	          <Text text="{name}"/>
+	          <Label text="Role"/>
+	          <Text  text="{role}"/>
+	          <Label text="Department"/>
+	          <Text  text="{dept}"/>
+	       </f:SimpleForm>
+		</content>
+	</Page>
+</core:View>

@@ -1,0 +1,24 @@
+{
+  "companyInfo" : {
+                  "name" : "S-Max Technologies",
+                  "address" : {
+                             "flatno" : 201,
+                             "street" : "SAP Street",
+                             "city" : "Hyderabad"
+                  },
+                  "empInfo" : [
+                  	{
+                  	"name" : "Devender",
+                  	"role" : "Trainer",
+                  	"dept" : "SAP"
+                   	},
+                   	{
+                  	"name" : "Surender",
+                  	"role" : "Marketing",
+                  	"dept" : "Sales"
+                   	}
+                  ]
+                                   
+  }
+}
+
